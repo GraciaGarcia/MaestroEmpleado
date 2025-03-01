@@ -1,14 +1,15 @@
 package edu.pe.vallegrande.Employeed.controller;
 
-
 import edu.pe.vallegrande.Employeed.model.Employee;
 import edu.pe.vallegrande.Employeed.service.EmployeeService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import java.util.List;
 
 @RestController
 @RequestMapping("/employees")
+@CrossOrigin(origins = "*")
 public class EmployeeController {
     private final EmployeeService service;
 
